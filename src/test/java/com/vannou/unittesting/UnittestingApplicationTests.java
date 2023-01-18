@@ -34,6 +34,13 @@ class UnittestingApplicationTests {
         testVoyelle(valeurTested,valeurWanted); 
 	}
 
+    @Test
+	void testStringUtilsNoVoyelle() {
+        String valeurTested = "Tss-tss";
+        String valeurWanted = "";
+        testVoyelle(valeurTested,valeurWanted); 
+	}
+
     
     private void testVoyelle(String valeurTested, String valeurWanted){
         String resultTest = stringUtils.vowels(valeurTested);
@@ -63,6 +70,12 @@ class UnittestingApplicationTests {
         testVoyelleUnique(valeurTested,valeurWanted); 
 	}
 
+    @Test
+	void testStringUtilsNoVoyelleUnique() {
+        String valeurTested = "Tss-tss";
+        String valeurWanted = "";
+        testVoyelle(valeurTested,valeurWanted); 
+	}
 
     private void testVoyelleUnique(String valeurTested, String valeurWanted){
         String resultTest = stringUtils.uniqueVowels(valeurTested);
